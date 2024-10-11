@@ -7,6 +7,7 @@ from PyQt6.QtCore import QLocale, QTranslator, QSettings, Qt
 from PyQt6.QtGui import QActionGroup, QIcon
 from .ui import Ui_MainWindow
 
+
 class Calculator(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -71,12 +72,15 @@ class Calculator(QMainWindow):
         self.ui.action_copy.triggered.connect(self.line_result_copy)
         self.ui.action_cut.triggered.connect(self.line_result_cut)
         self.ui.action_paste.triggered.connect(self.line_result_paste)
-        
+
         self.ui.action_about_program.triggered.connect(self.show_about_program)
         self.ui.action_about_qt.triggered.connect(self.show_about_qt)
 
         mode_group = QActionGroup(self)
-        mode_group_actions = [self.ui.action_standard, self.ui.action_engineer, self.ui.action_paper, self.ui.action_unit_converter]
+        mode_group_actions = [
+            self.ui.action_standard, self.ui.action_engineer,
+            self.ui.action_paper, self.ui.action_unit_converter
+        ]
         for action in mode_group_actions:
             mode_group.addAction(action)
             action.setCheckable(True)
@@ -103,7 +107,8 @@ class Calculator(QMainWindow):
         if self.ui.stackedwidget.currentIndex() == 0 or self.ui.stackedwidget.currentIndex() == 1:
             self.current_line_result.clearFocus()
             if event.key() in range(Qt.Key.Key_0, Qt.Key.Key_9 + 1) or \
-               event.key() in (Qt.Key.Key_Plus, Qt.Key.Key_Minus, Qt.Key.Key_Slash, Qt.Key.Key_Asterisk, Qt.Key.Key_Period) or \
+               event.key() in (Qt.Key.Key_Plus, Qt.Key.Key_Minus, Qt.Key.Key_Slash,
+                               Qt.Key.Key_Asterisk, Qt.Key.Key_Period) or \
                event.key() == Qt.Key.Key_ParenLeft or event.key() == Qt.Key.Key_ParenRight:
                 symbol = event.text()
                 self.write_symbol(symbol)
@@ -122,22 +127,25 @@ class Calculator(QMainWindow):
 
     # Input of symbols on standard and engineer modes
     def write_symbol(self, symbol):
-        if self.current_line_result.text() == "0" and not symbol in ["+", "-", "*", "/", "."]:
+        if self.current_line_result.text() == "0" and symbol not in ["+", "-", "*", "/", "."]:
             self.current_line_result.setText(symbol)
         elif self.current_line_result.text().endswith((".", "(", ")")) and symbol in [".", "(", ")"]:
             pass
-        elif self.current_line_result.text().endswith(("+", "-", "*", "/")) and symbol in [".", "+", "-", "*", "/", ")"]:
+        elif (
+            self.current_line_result.text().endswith(("+", "-", "*", "/"))
+            and symbol in [".", "+", "-", "*", "/", ")"]
+        ):
             pass
         elif self.current_line_result.text().endswith(tuple("0123456789")) and symbol in ["("]:
             pass
         else:
             self.current_line_result.setText(self.current_line_result.text() + symbol)
-            
+
     # Calculate
     def calculate(self):
         try:
             expression = self.current_line_result.text()
-            res = str(sympify(expression).evalf()).rstrip("0").rstrip(".") # Remove zeros and dots from the end
+            res = str(sympify(expression).evalf()).rstrip("0").rstrip(".")  # Remove zeros and dots from the end
             self.current_line_result.setText(res)
             self.ui.journal.addItem(f"{expression} = {res}")
         except Exception as e:
@@ -165,30 +173,35 @@ class Calculator(QMainWindow):
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def sin(self):
         try:
             res = sin(sympify(self.current_line_result.text()).evalf())
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def cos(self):
         try:
             res = cos(sympify(self.current_line_result.text()).evalf())
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def tan(self):
         try:
             res = tan(sympify(self.current_line_result.text()).evalf())
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def exp(self):
         try:
             res = exp(sympify(self.current_line_result.text()).evalf())
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def pi(self):
         try:
             if self.current_line_result.text() == "" or self.current_line_result.text() == "0":
@@ -198,6 +211,7 @@ class Calculator(QMainWindow):
                 self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def e(self):
         try:
             if self.current_line_result.text() == "" or self.current_line_result.text() == "0":
@@ -207,18 +221,21 @@ class Calculator(QMainWindow):
                 self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def procent(self):
         try:
             res = (sympify(self.current_line_result.text()) / Rational(100)).evalf()
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def radical(self):
         try:
             res = (sympify(self.current_line_result.text())).evalf()
             self.current_line_result.setText(str(sqrt(res)).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def square(self):
         try:
             res = (sympify(self.current_line_result.text()) * sympify(self.current_line_result.text())).evalf()
@@ -229,6 +246,7 @@ class Calculator(QMainWindow):
     # Journal functions
     def clear_journal(self):
         self.ui.journal.clear()
+
     def save_journal(self):
         file_path = QFileDialog.getSaveFileName(self)[0]
         if file_path:
@@ -251,11 +269,15 @@ class Calculator(QMainWindow):
                 units.meter, units.kilometer, units.inch, units.foot, units.yard, units.mile,
                 units.nautical_mile, units.astronomical_unit, units.lightyear
             ]
-            converted_value = units.convert_to(input_value * conversion_factors[input_index], conversion_factors[output_index]).evalf()
-            numeric_value = converted_value.args[0] # Convert to numeric
+            converted_value = units.convert_to(
+                input_value * conversion_factors[input_index],
+                conversion_factors[output_index]
+            ).evalf()
+            numeric_value = converted_value.args[0]  # Convert to numeric
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def convert_weight(self):
         try:
             input_value = Rational(self.ui.input_line_unit.text())
@@ -266,11 +288,15 @@ class Calculator(QMainWindow):
                 units.microgram, units.milligram, units.gram, units.pound,
                 units.kilogram, units.metric_ton
             ]
-            converted_value = units.convert_to(input_value * conversion_factors[input_index], conversion_factors[output_index]).evalf()
-            numeric_value = converted_value.args[0] 
+            converted_value = units.convert_to(
+                input_value * conversion_factors[input_index],
+                conversion_factors[output_index]
+            ).evalf()
+            numeric_value = converted_value.args[0]
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def convert_time(self):
         try:
             input_value = Rational(self.ui.input_line_unit.text())
@@ -283,11 +309,15 @@ class Calculator(QMainWindow):
                 units.julian_year,  units.draconic_year, units.tropical_year,
                 units.sidereal_year, units.gaussian_year, units.anomalistic_year
             ]
-            converted_value = units.convert_to(input_value * conversion_factors[input_index], conversion_factors[output_index]).evalf()
-            numeric_value = converted_value.args[0] 
+            converted_value = units.convert_to(
+                input_value * conversion_factors[input_index],
+                conversion_factors[output_index]
+            ).evalf()
+            numeric_value = converted_value.args[0]
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def convert_volume(self):
         try:
             input_value = Rational(self.ui.input_line_unit.text())
@@ -297,11 +327,15 @@ class Calculator(QMainWindow):
                 units.planck_volume, units.milliliter, units.centiliter,
                 units.deciliter, units.liter, units.quart
             ]
-            converted_value = units.convert_to(input_value * conversion_factors[input_index], conversion_factors[output_index]).evalf()
-            numeric_value = converted_value.args[0] 
+            converted_value = units.convert_to(
+                input_value * conversion_factors[input_index],
+                conversion_factors[output_index]
+            ).evalf()
+            numeric_value = converted_value.args[0]
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def convert_information(self):
         try:
             input_value = Rational(self.ui.input_line_unit.text())
@@ -311,11 +345,15 @@ class Calculator(QMainWindow):
                 units.bit, units.byte, units.kibibyte, units.mebibyte,
                 units.gibibyte, units.tebibyte, units.pebibyte, units.exbibyte
             ]
-            converted_value = units.convert_to(input_value * conversion_factors[input_index], conversion_factors[output_index]).evalf()
-            numeric_value = converted_value.args[0] 
+            converted_value = units.convert_to(
+                input_value * conversion_factors[input_index],
+                conversion_factors[output_index]
+            ).evalf()
+            numeric_value = converted_value.args[0]
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+
     def convert_pressure(self):
         try:
             input_value = Rational(self.ui.input_line_unit.text())
@@ -325,12 +363,15 @@ class Calculator(QMainWindow):
                 units.planck_pressure, units.atmosphere, units.bar, units.pascal,
                 units.torr, units.psi
             ]
-            converted_value = units.convert_to(input_value * conversion_factors[input_index], conversion_factors[output_index]).evalf()
-            numeric_value = converted_value.args[0] 
+            converted_value = units.convert_to(
+                input_value * conversion_factors[input_index],
+                conversion_factors[output_index]
+            ).evalf()
+            numeric_value = converted_value.args[0]
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
-        
+
     # Change mode
     def switch_to_standard(self):
         self.ui.stackedwidget.setCurrentWidget(self.ui.standard_page)
@@ -338,6 +379,7 @@ class Calculator(QMainWindow):
         self.clear_journal()
         settings = QSettings("pyqulator")
         settings.setValue("mode", "standard")
+
     def switch_to_engineer(self):
         self.ui.stackedwidget.setCurrentWidget(self.ui.engineer_page)
         self.current_line_result = self.ui.line_result_2
@@ -345,6 +387,7 @@ class Calculator(QMainWindow):
         self.clear_journal()
         settings = QSettings("pyqulator")
         settings.setValue("mode", "engineer")
+
     def switch_to_paper(self):
         self.ui.stackedwidget.setCurrentWidget(self.ui.paper_page)
         self.current_line_result = self.ui.line_result_3
@@ -354,6 +397,7 @@ class Calculator(QMainWindow):
         self.current_line_result.returnPressed.connect(self.calculate)
         settings = QSettings("pyqulator")
         settings.setValue("mode", "paper")
+
     def switch_to_unit_converter(self):
         self.ui.stackedwidget.setCurrentWidget(self.ui.unit_converter_page)
         self.current_line_result = self.ui.input_line_unit
@@ -365,11 +409,13 @@ class Calculator(QMainWindow):
     def line_result_copy(self):
         self.current_line_result.selectAll()
         self.current_line_result.copy()
+
     def line_result_cut(self):
         self.current_line_result.selectAll()
         self.current_line_result.cut()
         if self.ui.stackedwidget.currentIndex() == 0 or self.ui.stackedwidget.currentIndex() == 1:
             self.clear_line_result()
+
     def line_result_paste(self):
         if self.ui.stackedwidget.currentIndex() == 0 or self.ui.stackedwidget.currentIndex() == 1:
             self.current_line_result.setText("")
@@ -388,10 +434,12 @@ class Calculator(QMainWindow):
         '''
         self.about_msg.setText(msg_text)
         icon = QIcon.fromTheme(u"accessories-calculator")
-        self.about_msg.setIconPixmap(icon.pixmap(32,32))
+        self.about_msg.setIconPixmap(icon.pixmap(32, 32))
         self.about_msg.exec()
+
     def show_about_qt(self):
         QMessageBox.aboutQt(self)
+
 
 def main():
     app = QApplication([])
@@ -399,13 +447,14 @@ def main():
     # Translate app
     locale = QLocale.system().name()
     translator = QTranslator()
-    
+
     if translator.load(path.join(path.dirname(__file__), "locales", f"ui_{locale}.qm")):
         app.installTranslator(translator)
-        
+
     application = Calculator()
     application.show()
     sys.exit(app.exec())
+
 
 if __name__ == "__main__":
     main()
