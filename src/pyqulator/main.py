@@ -1,5 +1,5 @@
 import sys
-from os import path
+from os.path import join, dirname
 from sympy import sympify, Rational, log, sin, cos, tan, exp, pi, E, sqrt
 from sympy.physics import units
 from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox, QFileDialog
@@ -104,7 +104,7 @@ class Calculator(QMainWindow):
 
     # Keyboard key handling
     def keyPressEvent(self, event):
-        if self.ui.stackedwidget.currentIndex() == 0 or self.ui.stackedwidget.currentIndex() == 1:
+        if self.ui.stackedwidget.currentIndex() in {0, 1}:
             self.current_line_result.clearFocus()
             if event.key() in range(Qt.Key.Key_0, Qt.Key.Key_9 + 1) or \
                event.key() in (Qt.Key.Key_Plus, Qt.Key.Key_Minus, Qt.Key.Key_Slash,
@@ -413,13 +413,23 @@ class Calculator(QMainWindow):
     def line_result_cut(self):
         self.current_line_result.selectAll()
         self.current_line_result.cut()
-        if self.ui.stackedwidget.currentIndex() == 0 or self.ui.stackedwidget.currentIndex() == 1:
+        if self.ui.stackedwidget.currentIndex() in {0, 1}:
             self.clear_line_result()
 
     def line_result_paste(self):
-        if self.ui.stackedwidget.currentIndex() == 0 or self.ui.stackedwidget.currentIndex() == 1:
-            self.current_line_result.setText("")
+        if self.ui.stackedwidget.currentIndex() in {0, 1}:
+            self.current_line_result.clear()
         self.current_line_result.paste()
+        text = self.current_line_result.text()
+        filtered_text = ""
+        for char in text:
+            if self.ui.stackedwidget.currentIndex() in {0, 1, 2}:
+                if char.isdigit() or char in "+-*/()":
+                    filtered_text += char
+            else:
+                if char.isdigit():
+                    filtered_text += char
+        self.current_line_result.setText(filtered_text)
 
     # Show windows with info about program and Qt
     def show_about_program(self):
@@ -448,7 +458,7 @@ def main():
     locale = QLocale.system().name()
     translator = QTranslator()
 
-    if translator.load(path.join(path.dirname(__file__), "locales", f"ui_{locale}.qm")):
+    if translator.load(join(dirname(__file__), "locales", f"ui_{locale}.qm")):
         app.installTranslator(translator)
 
     application = Calculator()
