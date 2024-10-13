@@ -73,6 +73,9 @@ class Calculator(QMainWindow):
         self.ui.action_cut.triggered.connect(self.line_result_cut)
         self.ui.action_paste.triggered.connect(self.line_result_paste)
 
+        self.ui.action_line_top.triggered.connect(self.line_top)
+        self.ui.action_line_down.triggered.connect(self.line_down)
+
         self.ui.action_about_program.triggered.connect(self.show_about_program)
         self.ui.action_about_qt.triggered.connect(self.show_about_qt)
 
@@ -88,6 +91,7 @@ class Calculator(QMainWindow):
         # Load settings
         settings = QSettings("pyqulator")
         mode = settings.value("mode", "standard")
+        paper_mode_line = settings.value("paper_mode_line", "down")
 
         if mode == "standard":
             self.ui.action_standard.setChecked(True)
@@ -101,6 +105,11 @@ class Calculator(QMainWindow):
         else:
             self.ui.action_unit_converter.setChecked(True)
             self.switch_to_unit_converter()
+
+        if paper_mode_line == "down":
+            self.line_down()
+        if paper_mode_line == "top":
+            self.line_top()
 
     # Keyboard key handling
     def keyPressEvent(self, event):
@@ -430,6 +439,28 @@ class Calculator(QMainWindow):
                 if char.isdigit():
                     filtered_text += char
         self.current_line_result.setText(filtered_text)
+
+    def line_top(self):
+        while self.ui.horizontalLayout.count():
+            widget = self.ui.horizontalLayout.takeAt(0).widget()
+            self.ui.horizontalLayout.removeWidget(widget)
+        self.ui.verticalLayout.removeItem(self.ui.horizontalLayout)
+        self.ui.verticalLayout.insertLayout(0, self.ui.horizontalLayout)
+        self.ui.horizontalLayout.addWidget(self.ui.line_result_3)
+        self.ui.horizontalLayout.addWidget(self.ui.btn_equal_3)
+        settings = QSettings("pyqulator")
+        settings.setValue("paper_mode_line", "top")
+
+    def line_down(self):
+        while self.ui.horizontalLayout.count():
+            widget = self.ui.horizontalLayout.takeAt(0).widget()
+            self.ui.horizontalLayout.removeWidget(widget)
+        self.ui.verticalLayout.removeItem(self.ui.horizontalLayout)
+        self.ui.verticalLayout.addLayout(self.ui.horizontalLayout)
+        self.ui.horizontalLayout.addWidget(self.ui.line_result_3)
+        self.ui.horizontalLayout.addWidget(self.ui.btn_equal_3)
+        settings = QSettings("pyqulator")
+        settings.setValue("paper_mode_line", "down")
 
     # Show windows with info about program and Qt
     def show_about_program(self):

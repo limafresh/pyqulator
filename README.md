@@ -1,18 +1,27 @@
 # Pyqulator
-![Static Badge](https://img.shields.io/badge/Python-3.x-blue?logo=Python)
-![Static Badge](https://img.shields.io/badge/License-GPLv3-blue)
-![Static Badge](https://img.shields.io/badge/Platforms-Windows%7CmacOS%7CLinux-blue)
-![Static Badge](https://img.shields.io/badge/PyQt-6-green?logo=Qt)
+
+![Static Badge](https://img.shields.io/badge/License-GNU_GPL_v3-blue)
+![Static Badge](https://img.shields.io/badge/PyQt-6-green)
 
 A fully functional calculator written in PyQt 6 and using sympy for calculations. It has standard, engineer, paper modes and unit converter.
 
 ## Installation
 ### Via pip
-1. Run
+Run  
 ```
 pip install pyqulator
 ```  
-2. Once the installation is completed successfully, run
+### From source
+Run  
+```
+git clone https://github.com/l1mafresh/pyqulator.git
+```  
+```
+pip install .
+``` 
+
+## Launch
+Run  
 ```
 pyqulator
 ```
