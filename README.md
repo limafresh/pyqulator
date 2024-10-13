@@ -17,6 +17,9 @@ Run
 git clone https://github.com/l1mafresh/pyqulator.git
 ```  
 ```
+cd pyqulator
+```  
+```
 pip install .
 ``` 
 
