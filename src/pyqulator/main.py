@@ -92,6 +92,7 @@ class Calculator(QMainWindow):
         settings = QSettings("pyqulator")
         mode = settings.value("mode", "standard")
         paper_mode_line = settings.value("paper_mode_line", "down")
+        window_state = settings.value("window_state")
 
         if mode == "standard":
             self.ui.action_standard.setChecked(True)
@@ -110,6 +111,20 @@ class Calculator(QMainWindow):
             self.line_down()
         if paper_mode_line == "top":
             self.line_top()
+
+        if window_state == "maximized":
+            self.showMaximized()
+        elif window_state:
+            self.resize(window_state)
+
+    # Save window state
+    def closeEvent(self, event):
+        settings = QSettings("pyqulator")
+        if self.isMaximized():
+            settings.setValue("window_state", "maximized")
+        else:
+            settings.setValue("window_state", self.size())
+        event.accept()
 
     # Keyboard key handling
     def keyPressEvent(self, event):
