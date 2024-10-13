@@ -2135,8 +2135,22 @@ background-color: rgb(255, 170, 0);</string>
     <addaction name="action_cut"/>
     <addaction name="action_paste"/>
    </widget>
+   <widget class="QMenu" name="menu_view">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menu_paper_mode">
+     <property name="title">
+      <string>Paper mode</string>
+     </property>
+     <addaction name="action_line_top"/>
+     <addaction name="action_line_down"/>
+    </widget>
+    <addaction name="menu_paper_mode"/>
+   </widget>
    <addaction name="menu_mode"/>
    <addaction name="menu_edit"/>
+   <addaction name="menu_view"/>
    <addaction name="menu_help"/>
   </widget>
   <action name="action_about_program">
@@ -2207,6 +2221,22 @@ background-color: rgb(255, 170, 0);</string>
   <action name="action_unit_converter">
    <property name="text">
     <string>Unit converter</string>
+   </property>
+  </action>
+  <action name="action_line_top">
+   <property name="icon">
+    <iconset theme="go-top"/>
+   </property>
+   <property name="text">
+    <string>Input line at the top</string>
+   </property>
+  </action>
+  <action name="action_line_down">
+   <property name="icon">
+    <iconset theme="go-down"/>
+   </property>
+   <property name="text">
+    <string>Input line at the down</string>
    </property>
   </action>
  </widget>
