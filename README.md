@@ -13,30 +13,38 @@ A fully functional calculator written in PyQt 6 and using sympy for calculations
 
 ## Installation
 ### Via pip
-Run  
 ```
 pip install pyqulator
-```  
+```
 ### From source
-Run  
 ```
 git clone https://github.com/limafresh/pyqulator.git
-```  
+```
 ```
 cd pyqulator
-```  
+```
 ```
 pip install .
-``` 
+```
 
-## Launch
-Run  
+## Usage
 ```
 pyqulator
 ```
 
 ## Screenshots
+*Standard mode*
+
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot1.png)
+
+*Engineer mode*
+
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot2.png)
+
+*Paper mode*
+
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot3.png)
+
+*Unit converter*
+
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot4.png)
