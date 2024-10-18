@@ -448,10 +448,10 @@ class Calculator(QMainWindow):
         filtered_text = ""
         for char in text:
             if self.ui.stackedwidget.currentIndex() in {0, 1, 2}:
-                if char.isdigit() or char in "+-*/()":
+                if char.isdigit() or char in ".+-*/()":
                     filtered_text += char
             else:
-                if char.isdigit():
+                if char.isdigit() or char in ".":
                     filtered_text += char
         self.current_line_result.setText(filtered_text)
 
