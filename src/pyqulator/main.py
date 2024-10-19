@@ -279,7 +279,7 @@ class Calculator(QMainWindow):
             with open(file_path, "w") as file:
                 for i in range(self.ui.journal.count()):
                     item = self.ui.journal.item(i).text()
-                    file.write(item + '\n')
+                    file.write(item + "\n")
 
     # Unit converter functions
     def convert_length(self):
@@ -481,13 +481,13 @@ class Calculator(QMainWindow):
     def show_about_program(self):
         self.about_msg = QMessageBox()
         self.about_msg.setWindowTitle("About pyqulator")
-        msg_text = '''
+        msg_text = """
         pyqulator is a calculator written
         in Python and PyQt 6.
         Uses library: sympy.
         Licensed under GNU GPL v3.
         (c) limafresh, 2024
-        '''
+        """
         self.about_msg.setText(msg_text)
         icon = QIcon.fromTheme(u"accessories-calculator")
         self.about_msg.setIconPixmap(icon.pixmap(32, 32))
