@@ -1,3 +1,5 @@
+PyQt6>=6.4.2
+sympy>=1.13.3
+pyqt6-tools
 flake8
 flake8-quotes
-pyqt6-tools
