@@ -48,3 +48,8 @@ pyqulator
 *Unit converter*
 
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot4.png)
+
+## Flake8
+```
+pip install flake8 flake8-quotes flake8-import-order flake8-builtins
+```

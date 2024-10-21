@@ -1,10 +1,12 @@
+from os.path import dirname, join
 import sys
-from os.path import join, dirname
-from sympy import sympify, Rational, log, sin, cos, tan, exp, pi, E, sqrt
-from sympy.physics import units
-from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox, QFileDialog
-from PyQt6.QtCore import QLocale, QTranslator, QSettings, Qt
+
+from PyQt6.QtCore import QLocale, QSettings, Qt, QTranslator
 from PyQt6.QtGui import QActionGroup, QIcon
+from PyQt6.QtWidgets import QApplication, QFileDialog, QMainWindow, QMessageBox
+from sympy import cos, E, exp, log, pi, Rational, sin, sqrt, sympify, tan
+from sympy.physics import units
+
 from .ui import Ui_MainWindow
 
 
@@ -454,6 +456,8 @@ class Calculator(QMainWindow):
                 if char.isdigit() or char in ".":
                     filtered_text += char
         self.current_line_result.setText(filtered_text)
+        if self.current_line_result.text() == "":
+            self.clear_line_result()
 
     def line_top(self):
         while self.ui.horizontalLayout.count():
@@ -480,13 +484,14 @@ class Calculator(QMainWindow):
     # Show windows with info about program and Qt
     def show_about_program(self):
         self.about_msg = QMessageBox()
-        self.about_msg.setWindowTitle("About pyqulator")
+        self.about_msg.setWindowTitle("About Pyqulator")
         msg_text = """
-        pyqulator is a calculator written
-        in Python and PyQt 6.
-        Uses library: sympy.
-        Licensed under GNU GPL v3.
-        (c) limafresh, 2024
+        <p>Pyqulator is a calculator written<br>
+        in Python and PyQt 6.<br>
+        Uses library: sympy.<br>
+        Licensed under GNU GPL v3.<br>
+        (c) limafresh, 2024</p>
+        <p><a href="https://github.com/limafresh/pyqulator">Visit repository</a></p>
         """
         self.about_msg.setText(msg_text)
         icon = QIcon.fromTheme(u"accessories-calculator")
