@@ -1,10 +1,10 @@
-from os.path import dirname, join
 import sys
+from os.path import dirname, join
 
 from PyQt6.QtCore import QLocale, QSettings, Qt, QTranslator
 from PyQt6.QtGui import QActionGroup, QIcon
 from PyQt6.QtWidgets import QApplication, QFileDialog, QMainWindow, QMessageBox
-from sympy import cos, E, exp, log, pi, Rational, sin, sqrt, sympify, tan
+from sympy import E, Rational, cos, exp, log, pi, sin, sqrt, sympify, tan
 from sympy.physics import units
 
 from .ui import Ui_MainWindow
@@ -15,22 +15,44 @@ class Calculator(QMainWindow):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.init_UI()
+        self.sum()
 
-    def init_UI(self):
+    def sum(self):
         buttons = [
-            self.ui.btn_0, self.ui.btn_1, self.ui.btn_2, self.ui.btn_3,
-            self.ui.btn_4, self.ui.btn_5, self.ui.btn_6, self.ui.btn_7,
-            self.ui.btn_8, self.ui.btn_9,
-            self.ui.btn_dot, self.ui.btn_plus, self.ui.btn_minus,
-            self.ui.btn_multiple, self.ui.btn_divide,
-            self.ui.btn_leftbracket, self.ui.btn_rightbracket,
-            self.ui.btn_0_2, self.ui.btn_1_2, self.ui.btn_2_2, self.ui.btn_3_2,
-            self.ui.btn_4_2, self.ui.btn_5_2, self.ui.btn_6_2,
-            self.ui.btn_7_2, self.ui.btn_8_2, self.ui.btn_9_2,
-            self.ui.btn_dot_2, self.ui.btn_plus_2, self.ui.btn_minus_2,
-            self.ui.btn_multiple_2, self.ui.btn_divide_2,
-            self.ui.btn_leftbracket_2, self.ui.btn_rightbracket_2
+            self.ui.btn_0,
+            self.ui.btn_1,
+            self.ui.btn_2,
+            self.ui.btn_3,
+            self.ui.btn_4,
+            self.ui.btn_5,
+            self.ui.btn_6,
+            self.ui.btn_7,
+            self.ui.btn_8,
+            self.ui.btn_9,
+            self.ui.btn_dot,
+            self.ui.btn_plus,
+            self.ui.btn_minus,
+            self.ui.btn_multiple,
+            self.ui.btn_divide,
+            self.ui.btn_leftbracket,
+            self.ui.btn_rightbracket,
+            self.ui.btn_0_2,
+            self.ui.btn_1_2,
+            self.ui.btn_2_2,
+            self.ui.btn_3_2,
+            self.ui.btn_4_2,
+            self.ui.btn_5_2,
+            self.ui.btn_6_2,
+            self.ui.btn_7_2,
+            self.ui.btn_8_2,
+            self.ui.btn_9_2,
+            self.ui.btn_dot_2,
+            self.ui.btn_plus_2,
+            self.ui.btn_minus_2,
+            self.ui.btn_multiple_2,
+            self.ui.btn_divide_2,
+            self.ui.btn_leftbracket_2,
+            self.ui.btn_rightbracket_2,
         ]
 
         for button in buttons:
@@ -83,8 +105,10 @@ class Calculator(QMainWindow):
 
         mode_group = QActionGroup(self)
         mode_group_actions = [
-            self.ui.action_standard, self.ui.action_engineer,
-            self.ui.action_paper, self.ui.action_unit_converter
+            self.ui.action_standard,
+            self.ui.action_engineer,
+            self.ui.action_paper,
+            self.ui.action_unit_converter,
         ]
         for action in mode_group_actions:
             mode_group.addAction(action)
@@ -120,7 +144,7 @@ class Calculator(QMainWindow):
             self.resize(window_state)
 
     # Save window state
-    def closeEvent(self, event):
+    def closeEvent(self, event):  # noqa
         settings = QSettings("pyqulator")
         if self.isMaximized():
             settings.setValue("window_state", "maximized")
@@ -129,13 +153,16 @@ class Calculator(QMainWindow):
         event.accept()
 
     # Keyboard key handling
-    def keyPressEvent(self, event):
+    def keyPressEvent(self, event):  # noqa
         if self.ui.stackedwidget.currentIndex() in {0, 1}:
             self.current_line_result.clearFocus()
-            if event.key() in range(Qt.Key.Key_0, Qt.Key.Key_9 + 1) or \
-               event.key() in (Qt.Key.Key_Plus, Qt.Key.Key_Minus, Qt.Key.Key_Slash,
-                               Qt.Key.Key_Asterisk, Qt.Key.Key_Period) or \
-               event.key() == Qt.Key.Key_ParenLeft or event.key() == Qt.Key.Key_ParenRight:
+            if (
+                event.key() in range(Qt.Key.Key_0, Qt.Key.Key_9 + 1)
+                or event.key()
+                in (Qt.Key.Key_Plus, Qt.Key.Key_Minus, Qt.Key.Key_Slash, Qt.Key.Key_Asterisk, Qt.Key.Key_Period)
+                or event.key() == Qt.Key.Key_ParenLeft
+                or event.key() == Qt.Key.Key_ParenRight
+            ):
                 symbol = event.text()
                 self.write_symbol(symbol)
             elif event.key() == Qt.Key.Key_Backspace:
@@ -157,10 +184,14 @@ class Calculator(QMainWindow):
             self.current_line_result.setText(symbol)
         elif self.current_line_result.text().endswith((".", "(", ")")) and symbol in [".", "(", ")"]:
             pass
-        elif (
-            self.current_line_result.text().endswith(("+", "-", "*", "/"))
-            and symbol in [".", "+", "-", "*", "/", ")"]
-        ):
+        elif self.current_line_result.text().endswith(("+", "-", "*", "/")) and symbol in [
+            ".",
+            "+",
+            "-",
+            "*",
+            "/",
+            ")",
+        ]:
             pass
         elif self.current_line_result.text().endswith(tuple("0123456789")) and symbol in ["("]:
             pass
@@ -290,14 +321,26 @@ class Calculator(QMainWindow):
             input_index = self.ui.input_length_combobox.currentIndex()
             output_index = self.ui.output_length_combobox.currentIndex()
             conversion_factors = [
-                units.planck_length, units.angstrom, units.picometer, units.nanometer,
-                units.micrometer, units.millimeter, units.centimeter, units.decimeter,
-                units.meter, units.kilometer, units.inch, units.foot, units.yard, units.mile,
-                units.nautical_mile, units.astronomical_unit, units.lightyear
+                units.planck_length,
+                units.angstrom,
+                units.picometer,
+                units.nanometer,
+                units.micrometer,
+                units.millimeter,
+                units.centimeter,
+                units.decimeter,
+                units.meter,
+                units.kilometer,
+                units.inch,
+                units.foot,
+                units.yard,
+                units.mile,
+                units.nautical_mile,
+                units.astronomical_unit,
+                units.lightyear,
             ]
             converted_value = units.convert_to(
-                input_value * conversion_factors[input_index],
-                conversion_factors[output_index]
+                input_value * conversion_factors[input_index], conversion_factors[output_index]
             ).evalf()
             numeric_value = converted_value.args[0]  # Convert to numeric
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
@@ -310,13 +353,19 @@ class Calculator(QMainWindow):
             input_index = self.ui.input_weight_combobox.currentIndex()
             output_index = self.ui.output_weight_combobox.currentIndex()
             conversion_factors = [
-                units.amu, units.planck_mass, units.milli_mass_unit, units.dalton,
-                units.microgram, units.milligram, units.gram, units.pound,
-                units.kilogram, units.metric_ton
+                units.amu,
+                units.planck_mass,
+                units.milli_mass_unit,
+                units.dalton,
+                units.microgram,
+                units.milligram,
+                units.gram,
+                units.pound,
+                units.kilogram,
+                units.metric_ton,
             ]
             converted_value = units.convert_to(
-                input_value * conversion_factors[input_index],
-                conversion_factors[output_index]
+                input_value * conversion_factors[input_index], conversion_factors[output_index]
             ).evalf()
             numeric_value = converted_value.args[0]
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
@@ -329,15 +378,27 @@ class Calculator(QMainWindow):
             input_index = self.ui.input_time_combobox.currentIndex()
             output_index = self.ui.output_time_combobox.currentIndex()
             conversion_factors = [
-                units.planck_time, units.picosecond, units.nanosecond, units.microsecond,
-                units.millisecond, units.second, units.minute, units.hour,
-                units.day, units.full_moon_cycle, units.common_year, units.year,
-                units.julian_year,  units.draconic_year, units.tropical_year,
-                units.sidereal_year, units.gaussian_year, units.anomalistic_year
+                units.planck_time,
+                units.picosecond,
+                units.nanosecond,
+                units.microsecond,
+                units.millisecond,
+                units.second,
+                units.minute,
+                units.hour,
+                units.day,
+                units.full_moon_cycle,
+                units.common_year,
+                units.year,
+                units.julian_year,
+                units.draconic_year,
+                units.tropical_year,
+                units.sidereal_year,
+                units.gaussian_year,
+                units.anomalistic_year,
             ]
             converted_value = units.convert_to(
-                input_value * conversion_factors[input_index],
-                conversion_factors[output_index]
+                input_value * conversion_factors[input_index], conversion_factors[output_index]
             ).evalf()
             numeric_value = converted_value.args[0]
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
@@ -350,12 +411,15 @@ class Calculator(QMainWindow):
             input_index = self.ui.input_volume_combobox.currentIndex()
             output_index = self.ui.output_volume_combobox.currentIndex()
             conversion_factors = [
-                units.planck_volume, units.milliliter, units.centiliter,
-                units.deciliter, units.liter, units.quart
+                units.planck_volume,
+                units.milliliter,
+                units.centiliter,
+                units.deciliter,
+                units.liter,
+                units.quart,
             ]
             converted_value = units.convert_to(
-                input_value * conversion_factors[input_index],
-                conversion_factors[output_index]
+                input_value * conversion_factors[input_index], conversion_factors[output_index]
             ).evalf()
             numeric_value = converted_value.args[0]
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
@@ -368,12 +432,17 @@ class Calculator(QMainWindow):
             input_index = self.ui.input_information_combobox.currentIndex()
             output_index = self.ui.output_information_combobox.currentIndex()
             conversion_factors = [
-                units.bit, units.byte, units.kibibyte, units.mebibyte,
-                units.gibibyte, units.tebibyte, units.pebibyte, units.exbibyte
+                units.bit,
+                units.byte,
+                units.kibibyte,
+                units.mebibyte,
+                units.gibibyte,
+                units.tebibyte,
+                units.pebibyte,
+                units.exbibyte,
             ]
             converted_value = units.convert_to(
-                input_value * conversion_factors[input_index],
-                conversion_factors[output_index]
+                input_value * conversion_factors[input_index], conversion_factors[output_index]
             ).evalf()
             numeric_value = converted_value.args[0]
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
@@ -386,12 +455,15 @@ class Calculator(QMainWindow):
             input_index = self.ui.input_pressure_combobox.currentIndex()
             output_index = self.ui.output_pressure_combobox.currentIndex()
             conversion_factors = [
-                units.planck_pressure, units.atmosphere, units.bar, units.pascal,
-                units.torr, units.psi
+                units.planck_pressure,
+                units.atmosphere,
+                units.bar,
+                units.pascal,
+                units.torr,
+                units.psi,
             ]
             converted_value = units.convert_to(
-                input_value * conversion_factors[input_index],
-                conversion_factors[output_index]
+                input_value * conversion_factors[input_index], conversion_factors[output_index]
             ).evalf()
             numeric_value = converted_value.args[0]
             self.ui.output_line_unit.setText(str(numeric_value).rstrip("0").rstrip("."))
@@ -494,7 +566,7 @@ class Calculator(QMainWindow):
         <p><a href="https://github.com/limafresh/pyqulator">Visit repository</a></p>
         """
         self.about_msg.setText(msg_text)
-        icon = QIcon.fromTheme(u"accessories-calculator")
+        icon = QIcon.fromTheme("accessories-calculator")
         self.about_msg.setIconPixmap(icon.pixmap(32, 32))
         self.about_msg.exec()
 

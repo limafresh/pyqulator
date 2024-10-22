@@ -1,8 +1,0 @@
-[flake8]
-max-line-length = 120
-exclude = src/pyqulator/ui.py
-
-inline-quotes = "
-
-application-import-names = ui
-import-order-style = google

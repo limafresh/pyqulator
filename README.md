@@ -2,6 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/License-GNU_GPL_v3-blue)
 ![Static Badge](https://img.shields.io/badge/PyQt-6-green)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 A fully functional calculator written in PyQt 6 and using sympy for calculations.
 
@@ -48,8 +49,3 @@ pyqulator
 *Unit converter*
 
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot4.png)
-
-## Flake8
-```
-pip install flake8 flake8-quotes flake8-import-order flake8-builtins
-```
