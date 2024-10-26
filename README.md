@@ -15,26 +15,26 @@ A fully functional calculator written in PyQt 6 and using SymPy for calculations
 + Remember mode, window size and user settings for next launch
 
 ## Installation
-### From source
-```
-git clone https://github.com/limafresh/pyqulator.git
-```
-```
-cd pyqulator
-```
-```
-pip install .
-```
 ### From PyPi
 ```
 pip install pyqulator
+```
+### From source
+```
+git clone https://github.com/limafresh/pyqulator.git
+cd pyqulator
+pip install .
 ```
 
 ## Usage
 ```
 pyqulator
 ```
-If the program was installed from sources and on Linux, then you can launch it through the application menu. From PyPi this does not work yet.
+
+## Create shortcut in application menu (Linux only)
+```
+pyqulator_create_shortcut
+```
 
 ## Screenshots
 *Standard mode*
