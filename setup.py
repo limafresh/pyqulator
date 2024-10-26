@@ -1,5 +1,5 @@
 import shutil
-from os import path
+from os import makedirs, path
 from platform import system
 
 from setuptools import setup
@@ -11,7 +11,9 @@ class PostInstallCommand(install):
         super().run()
         if system() == "Linux":
             try:
-                source = path.join(path.dirname(__file__), "Pyqulator.desktop")
+                destination_dir = path.expanduser("~/.local/share/applications")
+                makedirs(destination_dir, exist_ok=True)
+                source = path.join(path.dirname(__file__), "src/pyqulator/Pyqulator.desktop")
                 destination = path.expanduser("~/.local/share/applications/Pyqulator.desktop")
                 shutil.copy(source, destination)
             except:  # noqa
