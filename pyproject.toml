@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyqulator"
-version = "1.6.0"
+version = "1.6.1"
 dependencies = [
   "PyQt6>=6.4.2",
   "sympy>=1.13.3",
@@ -39,7 +39,7 @@ Repository = "https://github.com/limafresh/pyqulator"
 Issues = "https://github.com/limafresh/pyqulator/issues"
 
 [tool.setuptools.package-data]
-pyqulator = ["locales/*.qm"]
+pyqulator = ["locales/*.qm", "Pyqulator.desktop"]
 
 [tool.ruff]
 line-length = 120
