@@ -12,6 +12,7 @@ A fully functional calculator written in PyQt 6 and using SymPy for calculations
 + Unit converter
 + Save journal as .txt
 + Move line up/down in paper mode
++ Available in 3 languages
 + Remember mode, window size and user settings for next launch
 
 ## Installation
@@ -34,6 +35,10 @@ pyqulator
 ## Create shortcut in application menu (Linux only)
 ```
 pyqulator_create_shortcut
+```
+If the installation was for all users:
+```
+sudo pyqulator_create_shortcut
 ```
 
 ## Screenshots
