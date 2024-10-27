@@ -558,9 +558,9 @@ class Calculator(QMainWindow):
         self.about_msg = QMessageBox()
         self.about_msg.setWindowTitle("About Pyqulator")
         msg_text = """
-        <p>Pyqulator is a calculator written<br>
+        <p>Pyqulator, calculator written<br>
         in Python and PyQt 6.<br>
-        Uses library: sympy.<br>
+        Uses SymPy library.<br>
         Licensed under GNU GPL v3.<br>
         (c) limafresh, 2024</p>
         <p><a href="https://github.com/limafresh/pyqulator">Visit repository</a></p>
