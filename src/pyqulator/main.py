@@ -207,6 +207,8 @@ class Calculator(QMainWindow):
             self.ui.journal.addItem(f"{expression} = {res}")
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     # Clear result line
     def clear_line_result(self):
