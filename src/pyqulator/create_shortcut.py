@@ -38,7 +38,7 @@ Comment[uk]=Повнофункціональний калькулятор
             with open(destination, "w") as desktop_file:
                 desktop_file.write(desktop_content)
 
-            print(f"Shortcut created!")
+            print("Shortcut created!")
         except Exception as e:
             print(f"Shortcut was not created: {e}")
     else:
