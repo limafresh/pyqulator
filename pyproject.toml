@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyqulator"
-version = "1.8.0"
+version = "1.9.0"
 dependencies = [
   "PyQt6>=6.4.2",
   "sympy>=1.13.3",
@@ -33,9 +33,6 @@ classifiers = [
 
 [project.gui-scripts]
 pyqulator = "pyqulator.main:main"
-
-[project.scripts]
-pyqulator_create_shortcut = "pyqulator.create_shortcut:main"
 
 [project.urls]
 Repository = "https://github.com/limafresh/pyqulator"
