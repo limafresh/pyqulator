@@ -232,6 +232,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     def sin(self):
         try:
@@ -239,6 +241,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     def cos(self):
         try:
@@ -246,6 +250,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     def tan(self):
         try:
@@ -253,6 +259,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     def exp(self):
         try:
@@ -260,6 +268,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     def pi(self):
         try:
@@ -270,6 +280,8 @@ class Calculator(QMainWindow):
                 self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     def e(self):
         try:
@@ -280,6 +292,8 @@ class Calculator(QMainWindow):
                 self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     def procent(self):
         try:
@@ -287,6 +301,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     def radical(self):
         try:
@@ -294,6 +310,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText(str(sqrt(res)).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     def square(self):
         try:
@@ -301,6 +319,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
         except Exception as e:
             QMessageBox.warning(self, "Error", str(e))
+        if self.current_line_result.text() == "":
+            self.current_line_result.setText("0")
 
     # Journal functions
     def clear_journal(self):
@@ -569,6 +589,7 @@ class Calculator(QMainWindow):
         """
         self.about_msg.setText(msg_text)
         icon = QIcon.fromTheme("accessories-calculator")
+        self.about_msg.setWindowIcon(icon)
         self.about_msg.setIconPixmap(icon.pixmap(32, 32))
         self.about_msg.exec()
 
