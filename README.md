@@ -17,28 +17,32 @@ A fully functional calculator written in PyQt 6 and using SymPy for calculations
 
 ## Installation
 ### From PyPi
-```
+```bash
 pip install pyqulator
 ```
 ### From source
-```
+```bash
 git clone https://github.com/limafresh/pyqulator.git
 cd pyqulator
 pip install .
 ```
+### Using install.sh (Recommended for Linux)
+1. Install dependencies: Python 3, PyQt6, SymPy
+2. Clone the code, go to the directory:
+```bash
+git clone https://github.com/limafresh/pyqulator.git
+cd pyqulator
+```
+3. Make install.sh executable and run as root:
+```bash
+chmod +x install.sh
+sudo ./install.sh
+```
+This will be faster and will also create a shortcut in the application menu.
 
 ## Usage
-```
+```bash
 pyqulator
-```
-
-## Create shortcut in application menu (Linux only)
-```
-pyqulator_create_shortcut
-```
-If the installation was for all users:
-```
-sudo pyqulator_create_shortcut
 ```
 
 ## Screenshots
