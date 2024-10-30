@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-PYTHON_LIB_DIR=$(python3 -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")
+LIB_DIR=$(python3 -c "from sysconfig import get_paths; print(get_paths()['purelib'])")
 BIN_DIR=/usr/local/bin
 
 echo "Copying files to Python directory..."
-mkdir -p $PYTHON_LIB_DIR/pyqulator
-cp src/pyqulator/*.py $PYTHON_LIB_DIR/pyqulator/
-mkdir -p $PYTHON_LIB_DIR/pyqulator/locales
-cp src/pyqulator/locales/*.qm $PYTHON_LIB_DIR/pyqulator/locales/
+mkdir -p $LIB_DIR/pyqulator
+cp src/pyqulator/*.py $LIB_DIR/pyqulator/
+mkdir -p $LIB_DIR/pyqulator/locales
+cp src/pyqulator/locales/*.qm $LIB_DIR/pyqulator/locales/
 
 echo "Creating link..."
 cat <<EOF > $BIN_DIR/pyqulator
