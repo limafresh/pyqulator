@@ -15,25 +15,7 @@ A fully functional calculator written in PyQt 6 and using SymPy for calculations
 + Available in 3 languages
 + Remember mode, window size and user settings for next launch
 
-## Installation
-### Debian/Ubuntu/Linux Mint
-[Download DEB file](https://github.com/limafresh/pyqulator/releases/download/v1.10.1/pyqulator.deb)
-### From PyPi
-```bash
-pip install pyqulator
-```
-### From source
-```bash
-git clone https://github.com/limafresh/pyqulator.git
-cd pyqulator
-pip install .
-```
-
-## Usage
-```bash
-pyqulator
-```
-### Add a shortcut in Linux (if installed from ways other than .deb)
+### Add a shortcut in Linux
 Download the `pyqulator.desktop` file and make it executable:
 ```bash
 wget https://raw.githubusercontent.com/limafresh/pyqulator/main/pyqulator.desktop

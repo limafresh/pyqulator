@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyqulator"
-version = "1.10.0"
+version = "1.10.1"
 dependencies = [
   "PyQt6>=6.4.2",
   "sympy>=1.13.3",
@@ -14,7 +14,7 @@ authors = [
   {name = "limafresh"},
 ]
 description = "A fully functional calculator written in PyQt 6 and using SymPy for calculations."
-readme = {file = "README.md", content-type = "text/markdown"}
+readme = {file = "README_PYPI.md", content-type = "text/markdown"}
 license = {file = "LICENSE"}
 keywords = ["calculator", "project", "pyqt", "pyqt6", "pyqt-calculator", "sympy", "pip", "gui-project"]
 classifiers = [
