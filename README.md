@@ -4,7 +4,7 @@
 ![Static Badge](https://img.shields.io/badge/PyQt-6-green)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
-A fully functional calculator written in PyQt 6 and using SymPy for calculations. Qt Designer and Qt Linguist were used to create the interface.
+A fully functional Qt calculator written in Python using Sympy for calculations. The interface was created using Qt Designer and Qt Linguist.
 
 ## Features
 + Simple and lightweight
@@ -13,33 +13,19 @@ A fully functional calculator written in PyQt 6 and using SymPy for calculations
 + Save journal as .txt
 + Move line up/down in paper mode
 + Available in 3 languages
-+ Remember mode, window size and user settings for next launch
 
 ## Installation
-### Debian/Ubuntu/Linux Mint
-[Download DEB file](https://github.com/limafresh/pyqulator/releases/download/v1.10.1/pyqulator.deb)
-### From PyPi
+### From .deb file (Debian/Ubuntu/Linux Mint)
+[Download .deb file](https://github.com/limafresh/pyqulator/releases/download/v1.11.0/pyqulator.deb)
+### From PyPi via pip
 ```bash
 pip install pyqulator
-```
-### From source
-```bash
-git clone https://github.com/limafresh/pyqulator.git
-cd pyqulator
-pip install .
 ```
 
 ## Usage
 ```bash
 pyqulator
 ```
-### Add a shortcut in Linux (if installed from ways other than .deb)
-Download the `pyqulator.desktop` file and make it executable:
-```bash
-wget https://raw.githubusercontent.com/limafresh/pyqulator/main/pyqulator.desktop
-chmod +x pyqulator.desktop
-```
-Just move it to `~/.local/share/` (for one user) or `/usr/share/applications` (for all users).
 
 ## Screenshots
 *Standard mode*
