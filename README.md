@@ -26,24 +26,18 @@ git clone https://github.com/limafresh/pyqulator.git
 cd pyqulator
 pip install .
 ```
-### Using install.sh (Recommended for Linux)
-1. Install dependencies: Python 3, PyQt6, SymPy
-2. Clone the code, go to the directory:
-```bash
-git clone https://github.com/limafresh/pyqulator.git
-cd pyqulator
-```
-3. Make install.sh executable and run as root:
-```bash
-chmod +x install.sh
-sudo ./install.sh
-```
-This will be faster and will also create a shortcut in the application menu.
 
 ## Usage
 ```bash
 pyqulator
 ```
+### Add a shortcut in Linux
+Download the `pyqulator.desktop` file and make it executable:
+```bash
+wget https://raw.githubusercontent.com/limafresh/pyqulator/main/pyqulator.desktop
+chmod +x pyqulator.desktop
+```
+Just move it to `~/.local/share/` (for one user) or `/usr/share/applications` (for all users).
 
 ## Screenshots
 *Standard mode*
