@@ -15,6 +15,10 @@ A fully functional calculator written in PyQt 6 and using SymPy for calculations
 + Available in 3 languages
 + Remember mode, window size and user settings for next launch
 
+## Usage
+```bash
+pyqulator
+```
 ### Add a shortcut in Linux
 Download the `pyqulator.desktop` file and make it executable:
 ```bash
