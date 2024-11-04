@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Calculator
+Comment=Mathematical calculations
+Exec=pyqulator
+Icon=accessories-calculator
+Terminal=false
+Categories=Utility;Calculator;
+Name[ru]=Калькулятор
+Name[uk]=Калькулятор
+Comment[ru]=Математические вычисления
+Comment[uk]=Математичні обчислення

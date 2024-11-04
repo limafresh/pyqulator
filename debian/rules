@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p debian/pyqulator/usr/bin
+	cp -a pyqulator debian/pyqulator/usr/bin/
+	mkdir -p debian/pyqulator/usr/lib/python3/dist-packages/pyqulator
+	cp -a src/pyqulator/* debian/pyqulator/usr/lib/python3/dist-packages/pyqulator/
+	mkdir -p debian/pyqulator/usr/share/applications
+	cp -a pyqulator.desktop debian/pyqulator/usr/share/applications/
+	mkdir -p debian/pyqulator/usr/share/doc/pyqulator
+	cp -a LICENSE debian/pyqulator/usr/share/doc/pyqulator/
