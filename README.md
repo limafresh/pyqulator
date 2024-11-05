@@ -16,7 +16,15 @@ A fully functional Qt calculator written in Python using Sympy for calculations.
 
 ## Installation
 ### From .deb file (Debian/Ubuntu/Linux Mint)
-[Download .deb file](https://github.com/limafresh/pyqulator/releases/download/v1.11.0/pyqulator.deb)
+[Download .deb file](https://launchpad.net/~limafresh/+archive/ubuntu/pyqulator/+packages)
+
+For Debian 12 or Ubuntu 24.04 Noble Numbat LTS based distributions, download the Noble version.
+### From PPA (Ubuntu based distributions, 24.04 and newer)
+```bash
+sudo add-apt-repository ppa:limafresh/pyqulator
+sudo apt update
+sudo apt install pyqulator
+```
 ### From PyPi via pip
 ```bash
 pip install pyqulator
@@ -26,6 +34,7 @@ pip install pyqulator
 ```bash
 pyqulator
 ```
+Or run it from the applications menu (it doesn't work from PyPi).
 
 ## Screenshots
 *Standard mode*
@@ -43,3 +52,7 @@ pyqulator
 *Unit converter*
 
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot4.png)
+
+## Notes
+### 05.11.2024
+New release numbering: X.X.X.postX (Major, minor, patch, README update or something not related to code).
