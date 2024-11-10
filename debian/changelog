@@ -1,4 +1,4 @@
-pyqulator (1.12.0-noble) noble; urgency=medium
+pyqulator (1.12.0-1noble) noble; urgency=medium
 
   * The appearance is more compact, the text is in the line on the right, the copyright file has been added, unnecessary files have been removed from the deb
 
