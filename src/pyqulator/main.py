@@ -58,7 +58,7 @@ class Calculator(QMainWindow):
         for button in buttons:
             button.clicked.connect(lambda checked, btn=button: self.write_symbol(btn.text()))
 
-        equal_buttons = [self.ui.btn_equal, self.ui.btn_equal_2, self.ui.btn_equal_3]
+        equal_buttons = [self.ui.btn_equal, self.ui.btn_equal_2, self.ui.btn_calculate]
         for btn_equal in equal_buttons:
             btn_equal.clicked.connect(self.calculate)
         clear_buttons = [self.ui.btn_clear, self.ui.btn_clear_2]
@@ -554,24 +554,24 @@ class Calculator(QMainWindow):
             self.clear_line_result()
 
     def line_top(self):
-        while self.ui.horizontalLayout.count():
-            widget = self.ui.horizontalLayout.takeAt(0).widget()
-            self.ui.horizontalLayout.removeWidget(widget)
-        self.ui.verticalLayout.removeItem(self.ui.horizontalLayout)
-        self.ui.verticalLayout.insertLayout(0, self.ui.horizontalLayout)
-        self.ui.horizontalLayout.addWidget(self.ui.line_result_3)
-        self.ui.horizontalLayout.addWidget(self.ui.btn_equal_3)
+        while self.ui.line_result_3_layout.count():
+            widget = self.ui.line_result_3_layout.takeAt(0).widget()
+            self.ui.line_result_3_layout.removeWidget(widget)
+        self.ui.paper_page_layout.removeItem(self.ui.line_result_3_layout)
+        self.ui.paper_page_layout.insertLayout(0, self.ui.line_result_3_layout)
+        self.ui.line_result_3_layout.addWidget(self.ui.line_result_3)
+        self.ui.line_result_3_layout.addWidget(self.ui.btn_calculate)
         settings = QSettings("pyqulator")
         settings.setValue("paper_mode_line", "top")
 
     def line_down(self):
-        while self.ui.horizontalLayout.count():
-            widget = self.ui.horizontalLayout.takeAt(0).widget()
-            self.ui.horizontalLayout.removeWidget(widget)
-        self.ui.verticalLayout.removeItem(self.ui.horizontalLayout)
-        self.ui.verticalLayout.addLayout(self.ui.horizontalLayout)
-        self.ui.horizontalLayout.addWidget(self.ui.line_result_3)
-        self.ui.horizontalLayout.addWidget(self.ui.btn_equal_3)
+        while self.ui.line_result_3_layout.count():
+            widget = self.ui.line_result_3_layout.takeAt(0).widget()
+            self.ui.line_result_3_layout.removeWidget(widget)
+        self.ui.paper_page_layout.removeItem(self.ui.line_result_3_layout)
+        self.ui.paper_page_layout.addLayout(self.ui.line_result_3_layout)
+        self.ui.line_result_3_layout.addWidget(self.ui.line_result_3)
+        self.ui.line_result_3_layout.addWidget(self.ui.btn_calculate)
         settings = QSettings("pyqulator")
         settings.setValue("paper_mode_line", "down")
 

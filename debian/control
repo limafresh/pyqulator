@@ -7,7 +7,7 @@ Standards-Version: 4.5.0
 Homepage: https://github.com/limafresh/pyqulator
 
 Package: pyqulator
-Description: A fully functional Qt calculator written in Python using Sympy for calculations.
+Description: A fully functional Qt calculator written in Python using Sympy for calculations
   Features
     + Simple and lightweight
     + Standard, engineer and paper modes

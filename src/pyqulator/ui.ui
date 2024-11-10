@@ -34,12 +34,15 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>20</pointsize>
+            <pointsize>15</pointsize>
             <bold>true</bold>
            </font>
           </property>
           <property name="text">
            <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
           </property>
           <property name="readOnly">
            <bool>true</bool>
@@ -58,7 +61,7 @@
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -80,7 +83,7 @@ background-color: rgb(255, 0, 127);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -102,7 +105,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -120,7 +123,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -138,12 +141,11 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 170, 255);</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string/>
@@ -170,7 +172,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -192,7 +194,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -210,7 +212,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -228,7 +230,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -246,7 +248,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -268,7 +270,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -290,7 +292,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -308,7 +310,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -326,7 +328,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -344,7 +346,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -366,7 +368,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -384,7 +386,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -402,7 +404,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -420,7 +422,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -438,7 +440,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -464,7 +466,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -482,7 +484,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -503,7 +505,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -524,7 +526,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -545,7 +547,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -566,7 +568,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -584,7 +586,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -606,7 +608,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -624,7 +626,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -642,7 +644,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -664,7 +666,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -682,7 +684,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -703,7 +705,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -721,7 +723,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -742,7 +744,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -764,7 +766,7 @@ background-color: rgb(255, 0, 127);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -782,7 +784,7 @@ background-color: rgb(255, 0, 127);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -800,7 +802,7 @@ background-color: rgb(255, 0, 127);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -822,7 +824,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -840,7 +842,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -862,7 +864,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -880,7 +882,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -902,8 +904,7 @@ background-color: rgb(255, 170, 0);</string>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 170, 255);</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string/>
@@ -930,7 +931,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -948,7 +949,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -966,7 +967,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -987,7 +988,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -1008,7 +1009,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1026,7 +1027,7 @@ background-color: rgb(0, 170, 255);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -1048,7 +1049,7 @@ background-color: rgb(255, 170, 0);</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>20</pointsize>
+              <pointsize>15</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1068,7 +1069,7 @@ background-color: rgb(255, 170, 0);</string>
           </property>
           <property name="font">
            <font>
-            <pointsize>20</pointsize>
+            <pointsize>15</pointsize>
             <bold>true</bold>
            </font>
           </property>
@@ -1077,6 +1078,9 @@ background-color: rgb(255, 170, 0);</string>
           </property>
           <property name="text">
            <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
           </property>
           <property name="readOnly">
            <bool>true</bool>
@@ -1088,7 +1092,7 @@ background-color: rgb(255, 170, 0);</string>
       <widget class="QWidget" name="paper_page">
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout">
+         <layout class="QVBoxLayout" name="paper_page_layout">
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_2">
             <item>
@@ -1132,7 +1136,7 @@ background-color: rgb(255, 170, 0);</string>
            </widget>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout">
+           <layout class="QHBoxLayout" name="line_result_3_layout">
             <item>
              <widget class="QLineEdit" name="line_result_3">
               <property name="font">
@@ -1144,7 +1148,7 @@ background-color: rgb(255, 170, 0);</string>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="btn_equal_3">
+             <widget class="QPushButton" name="btn_calculate">
               <property name="text">
                <string>Calculate</string>
               </property>
@@ -1158,18 +1162,6 @@ background-color: rgb(255, 170, 0);</string>
       </widget>
       <widget class="QWidget" name="unit_converter_page">
        <layout class="QVBoxLayout" name="verticalLayout_4">
-        <item>
-         <widget class="QLineEdit" name="input_line_unit">
-          <property name="font">
-           <font>
-            <pointsize>15</pointsize>
-           </font>
-          </property>
-          <property name="placeholderText">
-           <string>Enter number</string>
-          </property>
-         </widget>
-        </item>
         <item>
          <layout class="QHBoxLayout" name="length_horizontal">
           <item>
@@ -2085,16 +2077,32 @@ background-color: rgb(255, 170, 0);</string>
          </layout>
         </item>
         <item>
-         <widget class="QLineEdit" name="output_line_unit">
-          <property name="font">
-           <font>
-            <pointsize>15</pointsize>
-           </font>
-          </property>
-          <property name="readOnly">
-           <bool>true</bool>
-          </property>
-         </widget>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLineEdit" name="input_line_unit">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>Enter number</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="output_line_unit">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </widget>
@@ -2225,7 +2233,8 @@ background-color: rgb(255, 170, 0);</string>
   </action>
   <action name="action_line_top">
    <property name="icon">
-    <iconset theme="go-top"/>
+    <iconset theme="go-top">
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>Input line at the top</string>
@@ -2233,7 +2242,8 @@ background-color: rgb(255, 170, 0);</string>
   </action>
   <action name="action_line_down">
    <property name="icon">
-    <iconset theme="go-down"/>
+    <iconset theme="go-down">
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>Input line at the down</string>
