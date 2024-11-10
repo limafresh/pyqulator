@@ -28,7 +28,7 @@ sudo add-apt-repository ppa:limafresh/pyqulator
 sudo apt update
 sudo apt install pyqulator
 ```
-### From PyPi via pip
+### From PyPi via pip (any OS)
 ```bash
 pip install pyqulator
 ```
@@ -40,6 +40,8 @@ pyqulator
 Or run it from the applications menu (it doesn't work from PyPi).
 
 ## Screenshots
+Screenshots taken on Lubuntu 24.10.
+
 *Standard mode*
 
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot1.png)

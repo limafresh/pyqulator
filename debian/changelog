@@ -1,5 +1,5 @@
-pyqulator (1.11.0.post1-noble) noble; urgency=medium
+pyqulator (1.12.0-noble) noble; urgency=medium
 
-  * Initial release
+  * The appearance is more compact, the text is in the line on the right, the copyright file has been added, unnecessary files have been removed from the deb
 
- -- limafresh <limafresh@proton.me>  Thu, 07 Nov 2024 15:47:33 +0200
+ -- limafresh <limafresh@proton.me>  Sun, 10 Nov 2024 11:27:01 +0200
