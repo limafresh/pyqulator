@@ -115,10 +115,10 @@ class Calculator(QMainWindow):
             action.setCheckable(True)
 
         # Load settings
-        settings = QSettings("pyqulator")
-        mode = settings.value("mode", "standard")
-        paper_mode_line = settings.value("paper_mode_line", "down")
-        window_state = settings.value("window_state")
+        self.settings = QSettings("pyqulator")
+        mode = self.settings.value("mode", "standard")
+        paper_mode_line = self.settings.value("paper_mode_line", "down")
+        window_state = self.settings.value("window_state")
 
         if mode == "standard":
             self.ui.action_standard.setChecked(True)
@@ -145,11 +145,10 @@ class Calculator(QMainWindow):
 
     # Save window state
     def closeEvent(self, event):  # noqa
-        settings = QSettings("pyqulator")
         if self.isMaximized():
-            settings.setValue("window_state", "maximized")
+            self.settings.setValue("window_state", "maximized")
         else:
-            settings.setValue("window_state", self.size())
+            self.settings.setValue("window_state", self.size())
         event.accept()
 
     # Keyboard key handling
@@ -497,16 +496,14 @@ class Calculator(QMainWindow):
         self.ui.stackedwidget.setCurrentWidget(self.ui.standard_page)
         self.current_line_result = self.ui.line_result
         self.clear_journal()
-        settings = QSettings("pyqulator")
-        settings.setValue("mode", "standard")
+        self.settings.setValue("mode", "standard")
 
     def switch_to_engineer(self):
         self.ui.stackedwidget.setCurrentWidget(self.ui.engineer_page)
         self.current_line_result = self.ui.line_result_2
         self.ui.line_result_2.setText(self.ui.line_result.text())
         self.clear_journal()
-        settings = QSettings("pyqulator")
-        settings.setValue("mode", "engineer")
+        self.settings.setValue("mode", "engineer")
 
     def switch_to_paper(self):
         self.ui.stackedwidget.setCurrentWidget(self.ui.paper_page)
@@ -515,15 +512,13 @@ class Calculator(QMainWindow):
         self.clear_journal()
         self.clear_line_result()
         self.current_line_result.returnPressed.connect(self.calculate)
-        settings = QSettings("pyqulator")
-        settings.setValue("mode", "paper")
+        self.settings.setValue("mode", "paper")
 
     def switch_to_unit_converter(self):
         self.ui.stackedwidget.setCurrentWidget(self.ui.unit_converter_page)
         self.current_line_result = self.ui.input_line_unit
         self.clear_line_result()
-        settings = QSettings("pyqulator")
-        settings.setValue("mode", "unit_converter")
+        self.settings.setValue("mode", "unit_converter")
 
     # Edit functions
     def line_result_copy(self):
@@ -561,8 +556,7 @@ class Calculator(QMainWindow):
         self.ui.paper_page_layout.insertLayout(0, self.ui.line_result_3_layout)
         self.ui.line_result_3_layout.addWidget(self.ui.line_result_3)
         self.ui.line_result_3_layout.addWidget(self.ui.btn_calculate)
-        settings = QSettings("pyqulator")
-        settings.setValue("paper_mode_line", "top")
+        self.settings.setValue("paper_mode_line", "top")
 
     def line_down(self):
         while self.ui.line_result_3_layout.count():
@@ -572,8 +566,7 @@ class Calculator(QMainWindow):
         self.ui.paper_page_layout.addLayout(self.ui.line_result_3_layout)
         self.ui.line_result_3_layout.addWidget(self.ui.line_result_3)
         self.ui.line_result_3_layout.addWidget(self.ui.btn_calculate)
-        settings = QSettings("pyqulator")
-        settings.setValue("paper_mode_line", "down")
+        self.settings.setValue("paper_mode_line", "down")
 
     # Show windows with info about program and Qt
     def show_about_program(self):
