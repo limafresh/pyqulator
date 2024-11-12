@@ -32,6 +32,12 @@ sudo apt install pyqulator
 ```bash
 pip install pyqulator
 ```
+### From sources via pip (any OS)
+```bash
+git clone https://github.com/limafresh/pyqulator.git
+cd pyqulator
+pip install .
+```
 
 ## Usage
 ```bash
