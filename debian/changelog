@@ -1,5 +1,5 @@
-pyqulator (1.12.1-noble) noble; urgency=medium
+pyqulator (1.13.0-noble) noble; urgency=medium
 
-  * Removed redundant settings declaration, instead settings belong to self, the app shortcut is labeled as Pyqulator
+  * Removed color from buttons (as some themes do not support it), increased text size in the result line
 
- -- limafresh <limafresh@proton.me>  Sun, 12 Nov 2024 15:23:25 +0200
+ -- limafresh <limafresh@proton.me>  Sun, 24 Nov 2024 18:19:03 +0200
