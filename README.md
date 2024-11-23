@@ -46,8 +46,6 @@ pyqulator
 Or run it from the applications menu (it doesn't work from PyPi).
 
 ## Screenshots
-Screenshots taken on Lubuntu 24.10.
-
 *Standard mode*
 
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot1.png)
