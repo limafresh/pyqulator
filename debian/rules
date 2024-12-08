@@ -5,9 +5,12 @@
 
 override_dh_auto_install:
 	mkdir -p debian/pyqulator/usr/bin
-	cp -a pyqulator debian/pyqulator/usr/bin/
+	echo '#!/usr/bin/env python3' > debian/pyqulator/usr/bin/pyqulator
+	echo '' >> debian/pyqulator/usr/bin/pyqulator
+	echo 'from pyqulator.main import main' >> debian/pyqulator/usr/bin/pyqulator
+	echo 'main()' >> debian/pyqulator/usr/bin/pyqulator
 	mkdir -p debian/pyqulator/usr/lib/python3/dist-packages/pyqulator
-	rsync -av --exclude="*.ui" src/pyqulator/ debian/pyqulator/usr/lib/python3/dist-packages/pyqulator
+	rsync -av --exclude="*.ui" pyqulator/ debian/pyqulator/usr/lib/python3/dist-packages/pyqulator
 	mkdir -p debian/pyqulator/usr/share/applications
 	cp -a pyqulator.desktop debian/pyqulator/usr/share/applications/
 	mkdir -p debian/pyqulator/usr/share/doc/pyqulator

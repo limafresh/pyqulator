@@ -1,5 +1,5 @@
-pyqulator (1.13.0-noble) noble; urgency=medium
+pyqulator (1.13.1-noble) noble; urgency=medium
 
-  * Removed color from buttons (as some themes do not support it), increased text size in the result line
+  * Simplified structure, removed files for installation via pip
 
- -- limafresh <limafresh@proton.me>  Sun, 24 Nov 2024 18:19:03 +0200
+ -- limafresh <limafresh@proton.me>  Sun, 08 Dec 2024 17:40:00 +0200
