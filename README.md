@@ -28,22 +28,14 @@ sudo add-apt-repository ppa:limafresh/pyqulator
 sudo apt update
 sudo apt install pyqulator
 ```
-### From PyPi via pip (any OS)
-```bash
-pip install pyqulator
-```
-### From sources via pip (any OS)
-```bash
-git clone https://github.com/limafresh/pyqulator.git
-cd pyqulator
-pip install .
-```
+### Easy to run without installation
+Just run *main.py* via Python.
 
 ## Usage
 ```bash
 pyqulator
 ```
-Or run it from the applications menu (it doesn't work from PyPi).
+Or run it from the applications menu (if it was installed via via .deb file/apt).
 
 ## Screenshots
 *Standard mode*
@@ -61,7 +53,3 @@ Or run it from the applications menu (it doesn't work from PyPi).
 *Unit converter*
 
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot4.png)
-
-## Notes
-### 05.11.2024
-New release numbering: X.X.X.postX (Major, minor, patch, README update or something not related to code).

@@ -7,7 +7,10 @@ from PyQt6.QtWidgets import QApplication, QFileDialog, QMainWindow, QMessageBox
 from sympy import E, Rational, cos, exp, log, pi, sin, sqrt, sympify, tan
 from sympy.physics import units
 
-from .ui import Ui_MainWindow
+try:
+    from .ui import Ui_MainWindow
+except:  # noqa
+    from ui import Ui_MainWindow
 
 
 class Calculator(QMainWindow):
