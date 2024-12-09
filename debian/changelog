@@ -1,5 +1,5 @@
-pyqulator (1.13.1-noble) noble; urgency=medium
+pyqulator (1.14.0-noble) noble; urgency=medium
 
-  * Simplified structure, removed files for installation via pip
+  * Improved appearance
 
- -- limafresh <limafresh@proton.me>  Sun, 08 Dec 2024 17:40:00 +0200
+ -- limafresh <limafresh@proton.me>  Mon, 09 Dec 2024 10:40:00 +0200
