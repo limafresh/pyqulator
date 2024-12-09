@@ -22,6 +22,7 @@ A fully functional Qt calculator written in Python using Sympy for calculations.
 | ---------------- | ------------ | ------------------------------------- |
 | `pyqulator_<version>noble_all.deb` | Ubuntu Noble | Ubuntu Noble (24.04), Debian bookworm (12), Linux Mint 22, others based on Ubuntu 24.04 or Debian 12 |
 | `pyqulator_<version>oracular_all.deb` | Ubuntu Oracular | Ubuntu Oracular (24.10) |
+| `pyqulator_<version>plucky_all.deb` | Ubuntu Plucky | Ubuntu Plucky (25.04) |
 ### From PPA (Ubuntu based distributions, 24.04 and newer)
 ```bash
 sudo add-apt-repository ppa:limafresh/pyqulator
