@@ -39,6 +39,9 @@ pyqulator
 Or run it from the applications menu (if it was installed via via .deb file/apt).
 
 ## Screenshots
+
+Taken on antiX Linux with KvArc theme
+
 *Standard mode*
 
 ![Screenshot](https://raw.githubusercontent.com/limafresh/pyqulator/main/screenshots/screenshot1.png)

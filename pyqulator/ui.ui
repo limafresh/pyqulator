@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>362</width>
-    <height>363</height>
+    <width>312</width>
+    <height>378</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Calculator</string>
+   <string>Pyqulator</string>
   </property>
   <property name="windowIcon">
    <iconset theme="accessories-calculator">
@@ -25,10 +25,10 @@
     <property name="sizeConstraint">
      <enum>QLayout::SetMinAndMaxSize</enum>
     </property>
-    <item row="0" column="0">
+    <item row="3" column="0">
      <widget class="QStackedWidget" name="stackedwidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="standard_page">
        <layout class="QGridLayout" name="gridLayout_4">
@@ -44,7 +44,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -71,7 +71,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -95,7 +95,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -119,7 +119,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -146,7 +146,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -170,7 +170,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -197,7 +197,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -221,7 +221,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -245,7 +245,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -269,7 +269,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -293,7 +293,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -320,7 +320,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -344,7 +344,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -371,7 +371,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -398,7 +398,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -422,7 +422,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -446,7 +446,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -483,7 +483,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -507,7 +507,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -531,7 +531,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -588,7 +588,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -615,7 +615,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -639,7 +639,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -663,7 +663,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -690,7 +690,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -714,7 +714,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -741,7 +741,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -765,7 +765,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -792,7 +792,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -816,7 +816,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -840,7 +840,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -864,7 +864,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -891,7 +891,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -915,7 +915,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -939,7 +939,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -966,7 +966,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -990,7 +990,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1017,7 +1017,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1044,7 +1044,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1068,7 +1068,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1095,7 +1095,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1122,7 +1122,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1149,7 +1149,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1173,7 +1173,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1197,7 +1197,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1224,7 +1224,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1251,7 +1251,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1275,7 +1275,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1299,7 +1299,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1336,7 +1336,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
+              <width>50</width>
               <height>0</height>
              </size>
             </property>
@@ -1459,918 +1459,973 @@
       <widget class="QWidget" name="unit_converter_page">
        <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
-         <layout class="QHBoxLayout" name="length_horizontal">
-          <item>
-           <widget class="QLabel" name="length_label">
-            <property name="text">
-             <string>Length:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="input_length_combobox">
-            <property name="currentIndex">
-             <number>8</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Planck length</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Angstroms</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Picometers</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nanometers</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Micrometers</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Millimeters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Centimeters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Decimeters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Meters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Kilometers</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Inches</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Feet</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Yards</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Miles</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nautical miles</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Astronomical unit</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Lightyears</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="output_length_combobox">
-            <property name="currentIndex">
-             <number>6</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Planck length</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Angstroms</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Picometers</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nanometers</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Micrometers</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Millimeters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Centimeters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Decimeters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Meters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Kilometers</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Inches</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Feet</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Yards</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Miles</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nautical miles</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Astronomical unit</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Lightyears</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="length_convert_btn">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string>Convert</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="weight_horizontal">
-          <item>
-           <widget class="QLabel" name="weight_label">
-            <property name="text">
-             <string>Weight:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="input_weight_combobox">
-            <property name="currentIndex">
-             <number>8</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Atom mass unit</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Planck mass</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Milli mass unit</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Daltons</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Micrograms</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Milligrams</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Grams</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Pounds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Kilograms</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Tons</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="output_weight_combobox">
-            <property name="currentIndex">
-             <number>6</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Atom mass unit</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Planck mass</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Milli mass unit</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Daltons</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Micrograms</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Milligrams</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Grams</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Pounds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Kilograms</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Tons</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="weight_convert_btn">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string>Convert</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="time_horisontal">
-          <item>
-           <widget class="QLabel" name="time_label">
-            <property name="text">
-             <string>Time:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="input_time_combobox">
-            <property name="currentIndex">
-             <number>7</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Planck time</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Picoseconds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nanoseconds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Microseconds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Milliseconds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Seconds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Minutes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hours</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Days</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Full moon cycles</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Common years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Julian years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Draconic years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Tropical years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sidereal years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gaussian years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Anomalistic years</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="output_time_combobox">
-            <property name="currentIndex">
-             <number>6</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Planck time</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Picoseconds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nanoseconds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Microseconds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Milliseconds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Seconds</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Minutes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hours</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Days</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Full moon cycles</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Common years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Julian years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Draconic years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Tropical years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sidereal years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gaussian years</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Anomalistic years</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="time_convert_btn">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string>Convert</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="volume_horisontal">
-          <item>
-           <widget class="QLabel" name="volume_label">
-            <property name="text">
-             <string>Volume:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="input_volume_combobox">
-            <property name="currentIndex">
-             <number>4</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Planck volume</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Milliliters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Centiliters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Deciliters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Liters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Quarts</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="output_volume_combobox">
-            <property name="currentIndex">
-             <number>1</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Planck volume</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Milliliters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Centiliters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Deciliters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Liters</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Quarts</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="volume_convert_btn">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string>Convert</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="information_horisontal">
-          <item>
-           <widget class="QLabel" name="information_label">
-            <property name="text">
-             <string>Information:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="input_information_combobox">
-            <property name="currentIndex">
-             <number>3</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Bits</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Bytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Kibibytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Mebibytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gibibytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Tebibytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Pebibytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Exbibytes</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="output_information_combobox">
-            <property name="currentIndex">
-             <number>2</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Bits</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Bytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Kibibytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Mebibytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Gibibytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Tebibytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Pebibytes</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Exbibytes</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="information_convert_btn">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string>Convert</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="pressure_horisontal">
-          <item>
-           <widget class="QLabel" name="pressure_label">
-            <property name="text">
-             <string>Pressure:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="input_pressure_combobox">
-            <property name="currentIndex">
-             <number>3</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Planck pressure</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Atmospheres</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Bars</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Pascals</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Torrs</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Pounds per square inch</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="output_pressure_combobox">
-            <property name="currentIndex">
-             <number>2</number>
-            </property>
-            <property name="sizeAdjustPolicy">
-             <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>Planck pressure</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Atmospheres</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Bars</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Pascals</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Torrs</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Pounds per square inch</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pressure_convert_btn">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string>Convert</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <widget class="QToolBox" name="toolBox">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="length_page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>182</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Length</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="length_horizontal">
+              <item>
+               <widget class="QComboBox" name="input_length_combobox">
+                <property name="currentIndex">
+                 <number>8</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Planck length</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Angstroms</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Picometers</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Nanometers</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Micrometers</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Millimeters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Centimeters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Decimeters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Meters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Kilometers</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Inches</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Feet</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Yards</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Miles</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Nautical miles</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Astronomical unit</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Lightyears</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="output_length_combobox">
+                <property name="currentIndex">
+                 <number>6</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Planck length</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Angstroms</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Picometers</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Nanometers</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Micrometers</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Millimeters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Centimeters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Decimeters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Meters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Kilometers</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Inches</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Feet</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Yards</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Miles</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Nautical miles</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Astronomical unit</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Lightyears</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="length_convert_btn">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Convert</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="weight_page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>182</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Weight</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <layout class="QHBoxLayout" name="weight_horizontal">
+              <item>
+               <widget class="QComboBox" name="input_weight_combobox">
+                <property name="currentIndex">
+                 <number>8</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Atom mass unit</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Planck mass</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Milli mass unit</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Daltons</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Micrograms</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Milligrams</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Grams</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pounds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Kilograms</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Tons</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="output_weight_combobox">
+                <property name="currentIndex">
+                 <number>6</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Atom mass unit</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Planck mass</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Milli mass unit</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Daltons</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Micrograms</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Milligrams</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Grams</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pounds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Kilograms</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Tons</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="weight_convert_btn">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Convert</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="time_page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>182</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Time</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <layout class="QHBoxLayout" name="time_horisontal">
+              <item>
+               <widget class="QComboBox" name="input_time_combobox">
+                <property name="currentIndex">
+                 <number>7</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Planck time</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Picoseconds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Nanoseconds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Microseconds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Milliseconds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Seconds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Minutes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Hours</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Days</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Full moon cycles</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Common years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Julian years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Draconic years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Tropical years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Sidereal years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gaussian years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Anomalistic years</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="output_time_combobox">
+                <property name="currentIndex">
+                 <number>6</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Planck time</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Picoseconds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Nanoseconds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Microseconds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Milliseconds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Seconds</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Minutes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Hours</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Days</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Full moon cycles</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Common years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Julian years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Draconic years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Tropical years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Sidereal years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gaussian years</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Anomalistic years</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="time_convert_btn">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Convert</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="volume_page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>182</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Volume</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <layout class="QHBoxLayout" name="volume_horisontal">
+              <item>
+               <widget class="QComboBox" name="input_volume_combobox">
+                <property name="currentIndex">
+                 <number>4</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Planck volume</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Milliliters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Centiliters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Deciliters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Liters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Quarts</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="output_volume_combobox">
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Planck volume</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Milliliters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Centiliters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Deciliters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Liters</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Quarts</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="volume_convert_btn">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Convert</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="information_page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>182</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Information</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <layout class="QHBoxLayout" name="information_horisontal">
+              <item>
+               <widget class="QComboBox" name="input_information_combobox">
+                <property name="currentIndex">
+                 <number>3</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Bits</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Bytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Kibibytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Mebibytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gibibytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Tebibytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pebibytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Exbibytes</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="output_information_combobox">
+                <property name="currentIndex">
+                 <number>2</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Bits</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Bytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Kibibytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Mebibytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gibibytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Tebibytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pebibytes</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Exbibytes</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="information_convert_btn">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Convert</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="pressure_page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>182</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Pressure</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <layout class="QHBoxLayout" name="pressure_horisontal">
+              <item>
+               <widget class="QComboBox" name="input_pressure_combobox">
+                <property name="currentIndex">
+                 <number>3</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Planck pressure</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Atmospheres</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Bars</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pascals</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Torrs</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pounds per square inch</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="output_pressure_combobox">
+                <property name="currentIndex">
+                 <number>2</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Planck pressure</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Atmospheres</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Bars</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pascals</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Torrs</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pounds per square inch</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pressure_convert_btn">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Convert</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -2411,8 +2466,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>362</width>
-     <height>23</height>
+     <width>312</width>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_help">
