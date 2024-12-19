@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: pyqulator
 Upstream-Contact: limafresh <limafresh@proton.me>
-Source: http://github.com/limafresh/pyqulator
+Source: https://github.com/limafresh/pyqulator
 
 Files: *
 Copyright: 2024 limafresh <limafresh@proton.me>
