@@ -1,5 +1,5 @@
-pyqulator (1.15.0-noble) noble; urgency=medium
+pyqulator (1.15.1-noble) noble; urgency=medium
 
-  * Improved unit converter appearance, window title renamed to "Pyqulator", reduced minimum button size
+  * Used lazy imports, optimized code
 
- -- limafresh <limafresh@proton.me>  Thu, 19 Dec 2024 12:13:36 +0200
+ -- limafresh <limafresh@proton.me>  Sun, 22 Dec 2024 18:32:55 +0200

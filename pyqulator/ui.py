@@ -1113,7 +1113,7 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menu_help.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.stackedwidget.setCurrentIndex(1)
+        self.stackedwidget.setCurrentIndex(0)
         self.toolBox.setCurrentIndex(0)
         self.input_length_combobox.setCurrentIndex(8)
         self.output_length_combobox.setCurrentIndex(6)

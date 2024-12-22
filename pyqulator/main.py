@@ -1,26 +1,20 @@
-import sys
-from os.path import dirname, join
-
 from PyQt6.QtCore import QLocale, QSettings, Qt, QTranslator
-from PyQt6.QtGui import QActionGroup, QIcon
+from PyQt6.QtGui import QActionGroup
 from PyQt6.QtWidgets import QApplication, QFileDialog, QMainWindow, QMessageBox
-from sympy import E, Rational, cos, exp, log, pi, sin, sqrt, sympify, tan
-from sympy.physics import units
+from sympy import Rational, sympify
 
 try:
     from .ui import Ui_MainWindow
-except:  # noqa
+except:  # noqa: E722
     from ui import Ui_MainWindow
 
 
-class Calculator(QMainWindow):
+class Pyqulator(QMainWindow):
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.sum()
 
-    def sum(self):
         buttons = [
             self.ui.btn_0,
             self.ui.btn_1,
@@ -132,7 +126,7 @@ class Calculator(QMainWindow):
         elif mode == "paper":
             self.ui.action_paper.setChecked(True)
             self.switch_to_paper()
-        else:
+        elif mode == "unit_converter":
             self.ui.action_unit_converter.setChecked(True)
             self.switch_to_unit_converter()
 
@@ -147,7 +141,7 @@ class Calculator(QMainWindow):
             self.resize(window_state)
 
     # Save window state
-    def closeEvent(self, event):  # noqa
+    def closeEvent(self, event):  # noqa: N802
         if self.isMaximized():
             self.settings.setValue("window_state", "maximized")
         else:
@@ -155,7 +149,7 @@ class Calculator(QMainWindow):
         event.accept()
 
     # Keyboard key handling
-    def keyPressEvent(self, event):  # noqa
+    def keyPressEvent(self, event):  # noqa: N802
         if self.ui.stackedwidget.currentIndex() in {0, 1}:
             self.current_line_result.clearFocus()
             if (
@@ -229,6 +223,8 @@ class Calculator(QMainWindow):
 
     # Engineer mode operations
     def log(self):
+        from sympy import log
+
         try:
             res = log(sympify(self.current_line_result.text()).evalf())
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
@@ -238,6 +234,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText("0")
 
     def sin(self):
+        from sympy import sin
+
         try:
             res = sin(sympify(self.current_line_result.text()).evalf())
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
@@ -247,6 +245,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText("0")
 
     def cos(self):
+        from sympy import cos
+
         try:
             res = cos(sympify(self.current_line_result.text()).evalf())
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
@@ -256,6 +256,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText("0")
 
     def tan(self):
+        from sympy import tan
+
         try:
             res = tan(sympify(self.current_line_result.text()).evalf())
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
@@ -265,6 +267,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText("0")
 
     def exp(self):
+        from sympy import exp
+
         try:
             res = exp(sympify(self.current_line_result.text()).evalf())
             self.current_line_result.setText(str(res).rstrip("0").rstrip("."))
@@ -274,6 +278,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText("0")
 
     def pi(self):
+        from sympy import pi
+
         try:
             if self.current_line_result.text() == "" or self.current_line_result.text() == "0":
                 self.current_line_result.setText(str(pi.evalf()))
@@ -286,6 +292,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText("0")
 
     def e(self):
+        from sympy import E
+
         try:
             if self.current_line_result.text() == "" or self.current_line_result.text() == "0":
                 self.current_line_result.setText(str(E.evalf()))
@@ -307,6 +315,8 @@ class Calculator(QMainWindow):
             self.current_line_result.setText("0")
 
     def radical(self):
+        from sympy import sqrt
+
         try:
             res = (sympify(self.current_line_result.text())).evalf()
             self.current_line_result.setText(str(sqrt(res)).rstrip("0").rstrip("."))
@@ -340,6 +350,7 @@ class Calculator(QMainWindow):
 
     # Unit converter functions
     def convert_length(self):
+        units = globals()["units"]
         try:
             input_value = Rational(self.ui.input_line_unit.text())
             input_index = self.ui.input_length_combobox.currentIndex()
@@ -372,6 +383,7 @@ class Calculator(QMainWindow):
             QMessageBox.warning(self, "Error", str(e))
 
     def convert_weight(self):
+        units = globals()["units"]
         try:
             input_value = Rational(self.ui.input_line_unit.text())
             input_index = self.ui.input_weight_combobox.currentIndex()
@@ -397,6 +409,7 @@ class Calculator(QMainWindow):
             QMessageBox.warning(self, "Error", str(e))
 
     def convert_time(self):
+        units = globals()["units"]
         try:
             input_value = Rational(self.ui.input_line_unit.text())
             input_index = self.ui.input_time_combobox.currentIndex()
@@ -430,6 +443,7 @@ class Calculator(QMainWindow):
             QMessageBox.warning(self, "Error", str(e))
 
     def convert_volume(self):
+        units = globals()["units"]
         try:
             input_value = Rational(self.ui.input_line_unit.text())
             input_index = self.ui.input_volume_combobox.currentIndex()
@@ -451,6 +465,7 @@ class Calculator(QMainWindow):
             QMessageBox.warning(self, "Error", str(e))
 
     def convert_information(self):
+        units = globals()["units"]
         try:
             input_value = Rational(self.ui.input_line_unit.text())
             input_index = self.ui.input_information_combobox.currentIndex()
@@ -474,6 +489,7 @@ class Calculator(QMainWindow):
             QMessageBox.warning(self, "Error", str(e))
 
     def convert_pressure(self):
+        units = globals()["units"]
         try:
             input_value = Rational(self.ui.input_line_unit.text())
             input_index = self.ui.input_pressure_combobox.currentIndex()
@@ -518,6 +534,9 @@ class Calculator(QMainWindow):
         self.settings.setValue("mode", "paper")
 
     def switch_to_unit_converter(self):
+        from sympy.physics import units
+
+        globals()["units"] = units
         self.ui.stackedwidget.setCurrentWidget(self.ui.unit_converter_page)
         self.current_line_result = self.ui.input_line_unit
         self.clear_line_result()
@@ -573,6 +592,8 @@ class Calculator(QMainWindow):
 
     # Show windows with info about program and Qt
     def show_about_program(self):
+        from PyQt6.QtGui import QIcon
+
         self.about_msg = QMessageBox()
         self.about_msg.setWindowTitle("About Pyqulator")
         msg_text = """
@@ -593,6 +614,9 @@ class Calculator(QMainWindow):
 
 
 def main():
+    import sys
+    from os.path import dirname, join
+
     app = QApplication([])
 
     # Translate app
@@ -602,7 +626,7 @@ def main():
     if translator.load(join(dirname(__file__), "locales", f"ui_{locale}.qm")):
         app.installTranslator(translator)
 
-    application = Calculator()
+    application = Pyqulator()
     application.show()
     sys.exit(app.exec())
 
