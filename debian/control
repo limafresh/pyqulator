@@ -1,7 +1,7 @@
 Source: pyqulator
 Section: math
 Priority: optional
-Maintainer: limafresh <limafresh@proton.me>
+Maintainer: limafresh <173814432+limafresh@users.noreply.github.com>
 Build-Depends: debhelper-compat (= 10), rsync
 Standards-Version: 4.0.0
 Homepage: https://github.com/limafresh/pyqulator

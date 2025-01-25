@@ -1,15 +1,15 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: pyqulator
-Upstream-Contact: limafresh <limafresh@proton.me>
+Upstream-Contact: limafresh <173814432+limafresh@users.noreply.github.com>
 Source: https://github.com/limafresh/pyqulator
 
 Files: *
-Copyright: 2024 limafresh <limafresh@proton.me>
+Copyright: 2024 limafresh <173814432+limafresh@users.noreply.github.com>
 License: GPL-3+
 
 License: GPL-3+
     Pyqulator, a lightweight Qt calculator
-    Copyright (C) 2024  limafresh
+    Copyright (C) 2024-2025  limafresh
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
