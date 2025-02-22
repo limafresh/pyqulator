@@ -6,5 +6,6 @@ Exec=pyqulator
 Icon=accessories-calculator
 Terminal=false
 Categories=Utility;Calculator;
+StartupWMClass=pyqulator
 Comment[ru]=Математические вычисления
 Comment[uk]=Математичні обчислення

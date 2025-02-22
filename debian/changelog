@@ -1,5 +1,5 @@
-pyqulator (1.15.1+1-noble) noble; urgency=medium
+pyqulator (1.16.0-noble) noble; urgency=medium
 
-  * Used lazy imports, optimized code
+  * WM_CLASS is linked to .desktop file
 
- -- limafresh <173814432+limafresh@users.noreply.github.com>  Sat, 25 Jan 2025 20:05:36 +0200
+ -- limafresh <173814432+limafresh@users.noreply.github.com>  Sat, 22 Feb 2025 19:39:55 +0200

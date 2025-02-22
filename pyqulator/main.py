@@ -617,7 +617,10 @@ def main():
     import sys
     from os.path import dirname, join
 
-    app = QApplication([])
+    if sys.platform == "linux":
+        sys.argv = ["main.py", "-name", "pyqulator"]
+
+    app = QApplication(sys.argv)
 
     # Translate app
     locale = QLocale.system().name()
