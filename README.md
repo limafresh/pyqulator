@@ -4,10 +4,11 @@
 ![Static Badge](https://img.shields.io/badge/PyQt-6-green)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
+> The project is archived. It starts slowly compared to C/C++ calculators like MATE Calculator, KCalc, etc. And there are many calculators in the world - each device, each OS has a pre-installed one, and there is no need to develop another one, especially separately. It has never had a single user or contributor - so I have the moral right to archive it. This repository will be useful for those who want to get acquainted with the creation of a calculator and packaging in .deb. :)
+
 A fully functional Qt calculator written in Python using Sympy for calculations. The interface was created using Qt Designer and Qt Linguist.
 
 ## Features
-+ Simple and lightweight
 + Standard, engineer and paper modes
 + Unit converter
 + Save journal as .txt
@@ -16,19 +17,8 @@ A fully functional Qt calculator written in Python using Sympy for calculations.
 
 ## Installation
 ### From .deb file (Debian/Ubuntu/Linux Mint)
-[Download .deb file](https://launchpad.net/~limafresh/+archive/ubuntu/pyqulator/+packages)
+[Download .deb file](https://github.com/limafresh/pyqulator/releases)
 
-| Release filename | Build system | Compatible distributions |
-| ---------------- | ------------ | ------------------------------------- |
-| `pyqulator_<version>noble_all.deb` | Ubuntu Noble | Ubuntu Noble (24.04), Debian bookworm (12), Linux Mint 22, others based on Ubuntu 24.04 or Debian 12 |
-| `pyqulator_<version>oracular_all.deb` | Ubuntu Oracular | Ubuntu Oracular (24.10) |
-| `pyqulator_<version>plucky_all.deb` | Ubuntu Plucky | Ubuntu Plucky (25.04) |
-### From PPA (Ubuntu based distributions, 24.04 and newer)
-```bash
-sudo add-apt-repository ppa:limafresh/pyqulator
-sudo apt update
-sudo apt install pyqulator
-```
 ### Easy to run without installation
 Just run *main.py* via Python.
 
@@ -36,7 +26,7 @@ Just run *main.py* via Python.
 ```bash
 pyqulator
 ```
-Or run it from the applications menu (if it was installed via via .deb file/apt).
+Or run it from the applications menu (if it was installed from .deb file).
 
 ## Screenshots
 
